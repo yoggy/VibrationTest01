@@ -11,7 +11,10 @@ public class VibrationTest01View extends PseudoP5View {
 	float old_mouseY;
 	float diffX;
 	float diffY;
+	int line_weight = 3;
 
+	boolean debug = false;
+	
 	Vibrator vibrator;
 
 	public VibrationTest01View(Context context) {
@@ -43,10 +46,10 @@ public class VibrationTest01View extends PseudoP5View {
 
 		noFill();
 		stroke(255, 255, 255);
-		strokeWeight(3);
+		strokeWeight(line_weight);
 		line(width / 2, 0, width / 2, height);
 
-		if (mousePressed) {
+		if (mousePressed && debug ) {
 			noFill();
 			stroke(255, 255, 255);
 			strokeWeight(3);
@@ -95,5 +98,13 @@ public class VibrationTest01View extends PseudoP5View {
 			}
 
 		}
+	}
+
+	public void setLineWeight(int val) {
+		line_weight = val;
+	}
+	
+	public void toggleDebugDisplay() {
+		debug = !debug;
 	}
 }
