@@ -1,4 +1,4 @@
-package net.sabamiso.android;
+package net.sabamiso.android.vibrationtest01;
 
 import net.sabamiso.android.p5.PseudoP5View;
 import android.content.Context;

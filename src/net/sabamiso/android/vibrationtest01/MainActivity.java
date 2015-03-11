@@ -1,4 +1,4 @@
-package net.sabamiso.android;
+package net.sabamiso.android.vibrationtest01;
 
 import android.app.Activity;
 import android.os.Build;
