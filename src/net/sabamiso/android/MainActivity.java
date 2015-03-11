@@ -18,6 +18,12 @@ public class MainActivity extends Activity {
 	public static final int MENU_LINE_WEIGHT_64 = 3;
 	public static final int MENU_LINE_WEIGHT_128 = 4;
 	
+	public static final int MENU_VIBRATE_TIME_010 = 11;
+	public static final int MENU_VIBRATE_TIME_020 = 12;
+	public static final int MENU_VIBRATE_TIME_040 = 13;
+	public static final int MENU_VIBRATE_TIME_080 = 14;
+	public static final int MENU_VIBRATE_TIME_160 = 15;
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
@@ -57,6 +63,11 @@ public class MainActivity extends Activity {
 	    menu.add(Menu.NONE, MENU_LINE_WEIGHT_16, Menu.NONE, "line_weight=16");
 	    menu.add(Menu.NONE, MENU_LINE_WEIGHT_64, Menu.NONE, "line_weight=64");
 	    menu.add(Menu.NONE, MENU_LINE_WEIGHT_128, Menu.NONE, "line_weight=128");
+	    menu.add(Menu.NONE, MENU_VIBRATE_TIME_010, Menu.NONE, "vibrate_time=10ms");
+	    menu.add(Menu.NONE, MENU_VIBRATE_TIME_020, Menu.NONE, "vibrate_time=20ms");
+	    menu.add(Menu.NONE, MENU_VIBRATE_TIME_040, Menu.NONE, "vibrate_time=40ms");
+	    menu.add(Menu.NONE, MENU_VIBRATE_TIME_080, Menu.NONE, "vibrate_time=80ms");
+	    menu.add(Menu.NONE, MENU_VIBRATE_TIME_160, Menu.NONE, "vibrate_time=160ms");
 	    return true;
 	}
 	
@@ -75,8 +86,20 @@ public class MainActivity extends Activity {
 	    case MENU_LINE_WEIGHT_64:
 	    	view.setLineWeight(64);
 	        return true;	 
-	    case MENU_LINE_WEIGHT_128:
-	    	view.setLineWeight(128);
+	    case MENU_VIBRATE_TIME_010:
+	    	view.setVibrateTime(10);
+	        return true;	 
+	    case MENU_VIBRATE_TIME_020:
+	    	view.setVibrateTime(20);
+	        return true;	 
+	    case MENU_VIBRATE_TIME_040:
+	    	view.setVibrateTime(40);
+	        return true;	 
+	    case MENU_VIBRATE_TIME_080:
+	    	view.setVibrateTime(80);
+	        return true;	 
+	    case MENU_VIBRATE_TIME_160:
+	    	view.setVibrateTime(160);
 	        return true;	 
 	    }
 	    return false;
