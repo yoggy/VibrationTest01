@@ -5,6 +5,9 @@ VibrationTest01
 スマホの振動モータを使った振動にはタイムラグがあり、
 それがどの程度触覚に影響するかを考察するために作成。
 
+Google Play Store
+  * https://play.google.com/store/apps/details?id=net.sabamiso.android.vibrationtest01
+
 メモ
 ----
 タイムラグが生じる原因はどこにあるか？
